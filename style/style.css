@@ -51,6 +51,7 @@ p {
 .yellow-text {
     color: var(--color-yellow);
     text-transform: uppercase;
+    font-size: 1.2rem;
 }
 
 button {
@@ -124,8 +125,10 @@ li {
 
 .explore-text button {
     background-color: var(--color-white);
-    font-weight: bolder;
-    padding: 10px 30px;
+    font-size: 1rem;
+    font-weight: 800;
+    width: 250px;
+    padding: 10px;
     margin-top: 40px;
 }
 
@@ -234,10 +237,12 @@ li {
 }
 
 .menu-location button {
-    font-weight: bolder;
-    padding: 10px 30px;
     margin-top: 40px;
     margin-bottom: 110px;
+    font-size: 1rem;
+    font-weight: 800;
+    width: 220px;
+    padding: 10px;
 }
 
 #menu-button {
@@ -245,6 +250,51 @@ li {
 }
 
 #location-button {
-    background-color: none;
-    
+    color: var(--color-white);
+    border-color: var(--color-white);
+    border-width: 3px;
+    border-style: solid;
+    background-color: rgba(255, 255, 255, 0)
 }
+
+/* about us section */
+.about-us {
+    margin: 100px 10px 10px 10px;
+}
+
+.about-us img {
+    width: 100%;
+}
+
+.about-us .yellow-text {
+    margin-top: 20px;
+}
+
+.about-us h2 {
+    text-transform: uppercase;
+    margin: 10px auto;
+}
+
+.about-us p {
+    margin: 15px auto;
+}
+
+.about-us button {
+    background-color: var(--color-black);
+    color: var(--color-white);
+    font-size: 1rem;
+    font-weight: 800;
+    width: 160px;
+    padding: 10px;
+}
+
+/* testimonials section */
+.testimonials {
+    margin: 100px auto 10px auto;
+    background-color: var(--color-black);
+}
+
+.testimonials .wrapper {
+    margin: 100px 10px 10px 10px;
+}
+
