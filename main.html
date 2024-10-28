@@ -13,9 +13,11 @@
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-    <header>
-        <nav class="wrapper">
-            <img src="images/my-coffee-shop-logo.svg" alt="My Coffee House Logo">
+     <!-- Skip link shortcut -->
+     <a href="#main" class="skip-link">Skip to main content</a>
+    <header role="banner">
+        <nav class="wrapper" aria-label="Main Navigation">
+            <img src="images/my-coffee-shop-logo.svg" alt="My Coffee House Logo" role="img" aria-label="My Coffee House Logo">
             <ul>
                 <li><a href="#About-Us"></a>About Us</li>
                 <li><a href="#Menu"></a>Menu</li>
@@ -23,97 +25,102 @@
             </ul>
         </nav>
     </header>
-    <div class="explore">
-        <div class="wrapper">
-            <img src="images/hero-background.jpg" alt="Girl making coffee">
-            <div class="explore-text">
-                <h1>Experience coffee like never before</h1>
-                <p>We craft more than beverages; we curate memories, one flavorful moment at a time. Embrace the aroma and let every visit be a chapter in your coffee story.</p>
-                <button>Explore our menu</button>
+    <!-- main content -->
+    <main id="main" role="main">
+        <div class="explore">
+            <section class="wrapper">
+                <img src="images/hero-background.jpg" alt="Staff making coffee" role="img" aria-hidden="true">
+                <div class="explore-text">
+                    <h1>Experience coffee like never before</h1>
+                    <p>We craft more than beverages; we curate memories, one flavorful moment at a time. Embrace the aroma and let every visit be a chapter in your coffee story.</p>
+                    <button aria-label="Explore our menu" role="button">Explore our menu</button>
+                </div>
+            </section>
+        </div>
+        <div class="welcome">
+            <div class="wrapper">
+                <p class="yellow-text">Welcome to My Coffee House</p>
+                <h2>EXPERIENCE A NEW WAY TO TASTE COFFEE</h2>
+                <div class="welcome-images">
+                    <img src="images/latte.jpeg" alt="Making a cup of latte" role="img" aria-hidden="true">
+                    <img src="images/coffee-beans.jpeg" alt="Coffee beans" role="img" aria-hidden="true">
+                    <img src="images/pouring-coffee.jpeg" alt="Pouring a cup of coffee" role="img" aria-hidden="true">
+                    <img src="images/three-cups.jpeg" alt="Three cups of coffee" role="img" aria-hidden="true">
+                    <img src="images/smiling-employee.jpeg" alt="Smiling employee in the shop" role="img" aria-hidden="true">
+                </div>
             </div>
         </div>
-    </div>
-    <div class="welcome">
-        <div class="wrapper">
-            <p class="yellow-text">Welcome to My Coffee House</p>
-            <h2>EXPERIENCE A NEW WAY TO TASTE COFFEE</h2>
-            <div class="welcome-images">
-                <img src="images/latte.jpeg" alt="Making a cup of latte">
-                <img src="images/coffee-beans.jpeg" alt="Coffee beans">
-                <img src="images/pouring-coffee.jpeg" alt="Pouring a cup of coffee">
-                <img src="images/three-cups.jpeg" alt="Three cups of coffee">
-                <img src="images/smiling-employee.jpeg" alt="Smiling employee">
+        <div class="what-we-offer">
+            <div class="wrapper">
+                <p class="yellow-text">What we Offer</p>
+                <h2>Why visit us?</h2>
+                <div class="fair-trade" role="article">
+                    <img src="images/fair-trade.svg" alt="Fair Trade Coffee icon" role="img" aria-hidden="true">
+                    <h3>Fair Trade Coffee</h3>
+                    <p>We build direct relationships with the farmers and producers who help in the development of delicious, sustainable and organic coffee.</p>
+                </div>
+                <div class="local-baked" role="article">
+                    <img src="images/local-baked-goods.svg" alt="Local Baked Goods icon" role="img" aria-hidden="true">
+                    <h3>Local baked goods</h3>
+                    <p>We use local products to bake our goods and bring in a variety of treats from local bakers with our community.</p>
+                </div>
+                <div class="made-with-love" role="article">
+                    <img src="images/made-with-love.svg" alt="Made with Love icon" role="img" aria-hidden="true">
+                    <h3>Made with love</h3>
+                    <p>We value our customers and make it our priority to serve everyone with respect and a friendly smile to start their day of right.</p>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="what-we-offer">
-        <div class="wrapper">
-            <p class="yellow-text">What we Offer</p>
-            <h2>Why visit us?</h2>
-            <div class="fair-trade">
-                <img src="images/fair-trade.svg" alt="Fair trade icon">
-                <h3>Fair Trade Coffee</h3>
-                <p>We build direct relationships with the farmers and producers images/local-baked-goods.svgwho help in the development of delicious, sustainable and organic coffee.</p>
-            </div>
-            <div class="local-baked">
-                <img src="images/local-baked-goods.svg" alt="Local baked icon">
-                <h3>Local baked goods</h3>
-                <p>We use local products to bake our goods and bring in a variety of treats from local bakers with our community.</p>
-            </div>
-            <div class="made-with-love">
-                <img src="images/made-with-love.svg" alt="Made with love icon">
-                <h3>Made with love</h3>
-                <p>We value our customers and make it our priority to serve everyone with respect and a friendly smile to start their day of right.</p>
+        <div class="menu-location">
+            <div class="wrapper">
+                <img src="images/coffee-shop.jpeg" alt="Interior view of our coffee shop" role="img" aria-hidden="true">
+                <div class="menu-location-text">
+                    <div class="menu">
+                        <p class="yellow-text">Our Menu</p>
+                        <h2>Explore what we have to offer you</h2>
+                        <button aria-label="Explore our menu" role="button" id="menu-button">Explore our menu</button>
+                    </div>
+                    <div class="location">
+                        <p class="yellow-text">Locations</p>
+                        <h2>Find your nearest coffee shop</h2>
+                        <button aria-label="View our locations" role="button" id="location-button">View Locations</button>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="menu-location">
-        <div class="wrapper">
-            <img src="images/coffee-shop.jpeg" alt="Coffee shop">
-            <div class="menu">
-                <p class="yellow-text">Our Menu</p>
-                <h2>Explore what we have to offer you</h2>
-                <button>Explore our menu</button>
-            </div>
-            <div class="location">
-                <p class="yellow-text">Locations</p>
-                <h2>Find your nearest coffee shop</h2>
-                <button>View Locations</button>
+        <div class="about-us">
+            <div class="wrapper">
+                <img src="images/about-us.jpeg" alt="Coffee making" role="img" aria-hidden="true">
+                <p class="yellow-text">About Us</p>
+                <h2>Read our story</h2>
+                <p>In the heart of our community, My Coffee House emerged as a humble local coffee shop that sought to redefine the coffee experience. Founded with a passion for quality brews and a commitment to fostering genuine connections, we embarked on this journey with a vision to create a warm and inviting space for coffee enthusiasts and casual patrons alike.</p>
+                <p>My Coffee House quickly became a cherished gathering spot, where the rich aroma of freshly ground coffee beans mingled with the laughter of friends and the tapping of keyboards from those seeking a cozy workspace.</p>
+                <button>Learn more</button>
             </div>
         </div>
-    </div>
-    <div class="about-us">
-        <div class="wrapper">
-            <img src="images/about-us.jpeg" alt="Coffee making">
-            <p class="yellow-text">About Us</p>
-            <h2>Read our story</h2>
-            <p>In the heart of our community, My Coffee House emerged as a humble local coffee shop that sought to redefine the coffee experience. Founded with a passion for quality brews and a commitment to fostering genuine connections, we embarked on this journey with a vision to create a warm and inviting space for coffee enthusiasts and casual patrons alike.</p>
-            <p>My Coffee House quickly became a cherished gathering spot, where the rich aroma of freshly ground coffee beans mingled with the laughter of friends and the tapping of keyboards from those seeking a cozy workspace.</p>
-            <button>Learn more</button>
-        </div>
-    </div>
-    <div class="Testimonials">
-        <div class="wrapper">
-            <p class="yellow-text">Testimonials</p>
-            <h2>What our customers say about us</h2>
-            <div class="testimonial-1">
-                <img src="images/testimonial-1.jpeg" alt="Photo of Jane D., our customer">
-                <p>"I always make a point to visit My Coffee Company when in Ottawa. Delicious coffee and friendly service."</p>
-                <p class="yellow-text">Jane D., Toronto</p>
-            </div>
-            <div class="testimonial-2">
-                <img src="images/testimonial-2.jpeg" alt="Photo of Scott S., our customer">
-                <p>"Great atmosphere to get some work done while enjoying a cup or two of incredible coffee."</p>
-                <p class="yellow-text">Scott S., Ottawa</p>
-            </div>
-            <div class="testimonial-3">
-                <img src="images/testimonial-3.jpeg" alt="Photo of Susie F., our customer">
-                <p>"Best coffee in Ottawa and the service is top notch. Would highly recommend a visit."</p>
-                <p class="yellow-text">Susie F., Ottawa</p>
+        <div class="Testimonials">
+            <div class="wrapper">
+                <p class="yellow-text">Testimonials</p>
+                <h2>What our customers say about us</h2>
+                <div class="testimonial-1" role="article">
+                    <img src="images/testimonial-1.jpeg" alt="Photo of Jane D., our customer" role="img" aria-hidden="true">
+                    <p>"I always make a point to visit My Coffee Company when in Ottawa. Delicious coffee and friendly service."</p>
+                    <p class="yellow-text">Jane D., Toronto</p>
+                </div>
+                <div class="testimonial-2" role="article">
+                    <img src="images/testimonial-2.jpeg" alt="Photo of Scott S., our customer" role="img" aria-hidden="true">
+                    <p>"Great atmosphere to get some work done while enjoying a cup or two of incredible coffee."</p>
+                    <p class="yellow-text">Scott S., Ottawa</p>
+                </div>
+                <div class="testimonial-3" role="article">
+                    <img src="images/testimonial-3.jpeg" alt="Photo of Susie F., our customer" role="img" aria-hidden="true">
+                    <p>"Best coffee in Ottawa and the service is top notch. Would highly recommend a visit."</p>
+                    <p class="yellow-text">Susie F., Ottawa</p>
+                </div>
             </div>
         </div>
-    </div>
-    <footer>
+    </main>
+    <footer role="contentinfo">
         <p>© My Coffee Company 2024</p>
     </footer>
 </body>
