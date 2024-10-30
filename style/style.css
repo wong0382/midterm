@@ -6,6 +6,10 @@
 }
 
 /* root elements */
+html {
+    font-size: 16px; 
+}
+
 :root {
     --font-heading-nav: 'Lato', sans-serif;
     --font-body-button: 'Karla', sans-serif;
@@ -45,7 +49,6 @@ p, button {
 
 p {
     font-size: 1rem;
-    font-weight: 300;
 }
 
 .yellow-text {
@@ -121,7 +124,7 @@ li {
     text-align: center;
 }
 
-.explore-text h1 {
+.explore-text h2 {
     text-transform: uppercase;
     font-weight: 900;
 }
@@ -150,7 +153,7 @@ li {
     margin-bottom: 10px;
 }
 
-.welcome h2 {
+.welcome h3 {
     margin: 10px 200px 10px 0px;
 }
 
@@ -192,7 +195,7 @@ li {
     padding: 2rem 0;
 }
 
-.what-we-offer h2 {
+.what-we-offer h3 {
     margin-bottom: 1rem;
     text-transform: uppercase;
 }
@@ -205,10 +208,6 @@ li {
 .what-we-offer img {
     margin-bottom: 0.5rem;
     width: 25%;
-}
-
-.what-we-offer h3 {
-    text-transform: uppercase;
 }
 
 .what-we-offer p {
@@ -278,7 +277,7 @@ li {
     margin-top: 20px;
 }
 
-.about-us h2 {
+.about-us h3 {
     text-transform: uppercase;
     margin: 10px auto;
 }
@@ -302,7 +301,7 @@ li {
     background-color: var(--color-black);
 }
 
-.testimonials h2 {
+.testimonials h3 {
     color: var(--color-white);
     text-transform: uppercase;
     margin: 10px 100px 40px 0;
@@ -375,12 +374,25 @@ footer p {
 
 /* For tablet  */
 @media ((min-width: 768px)) {
+    /* font size */
+    h1 {
+        font-size: 2.986rem;
+    }
+    
+    h2 {
+        font-size: 2.488rem;
+    }
+    
+    h3 {
+        font-size: 1.728rem;
+    }
+    
     /* tablet welcome section */
     .welcome {
         margin-top: 70px;
     }   
 
-    .welcome h2 {
+    .welcome h3 {
         padding-right: 200px;
     }
 
@@ -459,10 +471,6 @@ footer p {
     }
 
     /* tablet testimonials section */
-    .testimonials {
-        /* padding-bottom: 50px; */
-    }
-
     .testimonials article {
         display: flex;
     }
@@ -477,7 +485,7 @@ footer p {
         margin-right: 10px;
     }
 
-    .testimonials h2 {
+    .testimonials h3 {
         margin-right: 400px;
     }
 
@@ -490,9 +498,22 @@ footer p {
 
 /* desktop welcome section */
 @media ((min-width: 1100px)) {
+    /* font size */
+    h1 {
+        font-size: 3.815rem;
+    }
+    
+    h2 {
+        font-size: 3.052rem;
+    }
+    
+    h3 {
+        font-size: 1.953rem;
+    }
+
     /* desktop welcome section */
     header {
-        padding: 10px 0;
+        padding: 0;
     }
     
     header .wrapper {
@@ -501,20 +522,81 @@ footer p {
         align-items: center;
         max-width: 1100px;
         margin: 0;
-        padding: 10px 20px; 
-
     }
     
     header .wrapper img {
-        max-height: 50px;
-        margin-right: auto;
+        height: 20px;
+        margin-left: 150px;
     }
     
     header .wrapper ul {
         display: flex;
         gap: 50px; 
-        margin: 0;
-        margin-left: 420px;
+        margin: 0 0 0 350px;
+        font-size: 0.8rem;
+        padding: 20px 0;
     }
 
+    /* desktop explore section */
+    .explore img {
+        height: 500px;
+        filter: brightness(0.5);
+    }
+
+    .explore h1, .explore p {
+        margin: 0 auto;
+        width: 400px;
+    }
+
+    .explore-text {
+        top: 33%;
+    }
+        
+    /* desktop welcome section */
+    .welcome {
+        margin: 70px 150px 0 150px;
+    }
+
+    .welcome h3 {
+        margin-right: 10px;
+    }
+
+    /* desktop what we offer */
+    .what-we-offer-icons {
+        display: flex;
+        flex-wrap: nowrap;
+        width: 75%;
+    }
+    
+    .what-we-offer img {
+        width: 100px;
+    }
+
+    .fair-trade, .local-baked, .made-with-love  {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    .what-we-offer-icons h3 {
+        font-size: 1.5rem;
+    }
+
+    /* desktop what we offer section */
+    .menu-location img {
+        height: 300px;
+    }
+
+    /* desktop about us */
+    .about-us {
+        margin: 100px 150px 0 150px;
+    }
+
+    /* desktop testmonial */
+    .testimonials .wrapper {
+        margin: 70px 150px 0 150px;
+    }
+
+    .testimonial-1 img, .testimonial-2 img, .testimonial-3 img {
+        height: 350px;
+    }
 }
