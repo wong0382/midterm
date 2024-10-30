@@ -369,6 +369,7 @@ footer p {
     margin-bottom: 40px;
 }
 
+/* For tablet  */
 @media ((min-width: 768px)) {
     /* tablet welcome section */
     .welcome {
@@ -448,10 +449,9 @@ footer p {
     .about-us article {
         margin-right: 10px;
     }
-
-    .about-us h2 {
-
- 
+    
+    .about-us .yellow-text {
+        padding-top: 30px;
     }
 
     /* tablet testimonials section */
@@ -483,3 +483,5 @@ footer p {
         top: 65%;
     }
 }
+
+/* desktop welcome section */
