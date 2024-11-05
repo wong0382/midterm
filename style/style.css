@@ -70,6 +70,9 @@ button {
 
 .skip-link {
     display: none;
+    position: absolute;
+    z-index: 1000;
+    top: 10px;
 }
 
 /* header nav */
@@ -378,7 +381,7 @@ footer p {
 }
 
 /* For tablet  */
-@media ((min-width: 768px)) {
+@media (min-width: 768px) {
     /* font size */
     h1 {
         font-size: 2.986rem;
@@ -508,7 +511,7 @@ footer p {
 }
 
 /* desktop welcome section */
-@media ((min-width: 1100px)) {
+@media (min-width: 1100px) {
     /* font size */
     h1 {
         font-size: 3.815rem;
@@ -582,7 +585,7 @@ footer p {
         width: 140px;
     }
 
-    .fair-trade, .local-baked, .made-with-love  {
+    .fair-trade, .local-baked, .made-with-love {
         /* margin: 0 50px; */
     }
 
