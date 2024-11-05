@@ -68,11 +68,22 @@ button {
     padding: 0;
 }
 
-.skip-link {
-    display: none;
+/* skip-links section */
+.skip-links ul{
+    list-style: none;
+    position: relative;
+  }
+  
+.skip-links a{
     position: absolute;
-    z-index: 1000;
-    top: 10px;
+    top: -10em;
+}
+  
+.skip-links a:focus{
+    top: 0;
+    background: var(--color-yellow);
+    display: block;
+    padding: 10px;
 }
 
 /* header nav */
@@ -649,11 +660,16 @@ footer p {
 
     /* desktop testmonial */
     .testimonials .wrapper {
-        margin: 70px 150px 0 150px;
+        margin: 70px 150px 0 250px;
+    }
+
+    .testimonials {
+        margin: 0 auto;
     }
 
     .testimonial-1 img, .testimonial-2 img, .testimonial-3 img {
-        height: 350px;
+        height: 450px;
+        margin: 0 20px;
     }
 
     /* desktop footer */
