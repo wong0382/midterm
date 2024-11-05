@@ -140,11 +140,20 @@ li {
 
 .explore-text button {
     background-color: var(--color-white);
+    border: 2px solid white;
     font-size: 1rem;
     font-weight: 800;
     width: 250px;
     padding: 10px;
     margin-top: 40px;
+    cursor: pointer;
+    transition: all 0.3s ease; 
+}
+
+.explore-text button:hover {
+    background-color: var(--color-yellow);
+    color: var(--color-white);
+    border: 2px solid var(--color-white);
 }
 
 /* welcome section */
@@ -262,6 +271,14 @@ li {
 
 #menu-button {
     background-color: var(--color-white);
+    cursor: pointer;
+    transition: all 0.3s ease; 
+}
+
+#menu-button:hover {
+    background-color: var(--color-yellow);
+    color: var(--color-white);
+    border: 2px solid var(--color-white);
 }
 
 #location-button {
@@ -269,7 +286,14 @@ li {
     border-color: var(--color-white);
     border-width: 3px;
     border-style: solid;
-    background-color: rgba(255, 255, 255, 0)
+    background-color: rgba(255, 255, 255, 0);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#location-button:hover {
+    background-color: var(--color-white);
+    color: var(--color-black);
 }
 
 /* about us section */
@@ -301,6 +325,11 @@ li {
     font-weight: 800;
     width: 160px;
     padding: 10px;
+}
+
+.about-us button:hover {
+    background-color: var(--color-yellow);
+    color: var(--color-black);
 }
 
 /* testimonials section */
