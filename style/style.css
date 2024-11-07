@@ -117,6 +117,11 @@ li {
     font-weight: bold;
 }
 
+header a {
+    text-decoration: none;
+    color: var(--color-white);
+}
+
 /* explore section */
 .explore {
     position: relative;
@@ -573,18 +578,17 @@ footer p {
     
     header .wrapper {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
-        margin: 0;
+        margin: 0 100px;
+        width: 100%;
     }
     
     header .wrapper img {
         height: 30px;
-        margin-left: 100px;
     }
     
     header .wrapper ul {
-        display: flex;
         gap: 50px; 
         margin-left: auto;
         padding: 20px 0;
@@ -623,10 +627,6 @@ footer p {
     
     .what-we-offer img {
         width: 140px;
-    }
-
-    .fair-trade, .local-baked, .made-with-love {
-        /* margin: 0 50px; */
     }
 
     .what-we-offer-icons h3 {
